@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+
+        <meta charset="UTF-8">
+        <title>Tables</title>
+
+    </head>
+
+
+    <body>
+
+        <!--
+            <table> etiketi ile tablonun genel yapısını oluştururuz.
+            <thead> etiketi ile tablonun başlık kısımlarını oluştururuz.
+            <body> etiketi ile tablonun başlıktan sonraki alt kısımlarını oluştururuz.
+            <tr> etiketi ile satır kısımlarını oluştururuz.
+            <th> etiketi ile tablonun başlık kısımlarındaki sütunları oluştururuz.
+            <td> etiketi ile tablonun başlıktan sonraki alt kısımlarındaki sütunları oluştururuz.
+            
+            'border' özelliği ile tablo kenarlıklarına kalınlık verilir.
+            'width' özelliği ile tablonun genişliği belirlenir..
+            'rowspan' özelliği ile sayı belirtilerek satırlar birleştirilir.
+            'colspan' özelliği ile sayı belirtilerek sütunlar birleştirilir.
+        -->
+        <table border="1" width="60%">
+
+            <thead>
+                <tr>
+                    <th>Kurs adı</th>
+                    <th>Kurs saati</th>
+                    <th>Ders adedi</th>
+                </tr>
+            </thead>
+            
+            <tbody>
+                <tr>
+                    <td>Komple Web Geliştirme Eğitimi</td>
+                    <td>45</td>
+                    <td>300</td>
+                </tr>
+    
+                <tr>
+                    <td>Core 2 MVC Eğitimi : Sıfırdan İleri Seviye</td>
+                    <td>30</td>
+                    <td rowspan="2">200</td>
+                </tr>
+
+                <tr>
+                    <td colspan="2">C# Eğitimi : Sıfırdan İleri Seviye</td>
+                </tr>
+            </tbody>
+            
+        </table>
+
+    </body>
+</html>

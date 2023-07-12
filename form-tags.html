@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+
+        <meta charset="UTF-8">
+        <title>Form Tags</title>
+
+    </head>
+
+
+    <body>
+
+        <form action="/Home/Register"> <!-- <form> etiketi ile formun genel yapısını oluştururuz. -->
+
+            <!-- <input> etiketi girdi almak ve girdileri göndermek için kullanılır. -->
+            <p>
+                Ad : <input type="text" name="ad" placeholder="Adınızı griniz" required> 
+                <!--
+                    'type' özelliği girdi alınacak parametrenin tipini belirler.
+
+                    'text' tipi metin girdisi almak için kullanılır.
+                    'placeholder' özelliği metin kutusu içinde ipucu vermek için kullanılır.
+                    'required' özelliği metin kutusunun boş bırakılamayacağı uyarısını verir.
+                    'name' özelliği girdilerin gönderilme yerini belirtir.
+                -->
+            </p>
+            <p>
+                Soyad : <input type="text" name="soyad" placeholder="Soydaınızı giriniz" required>
+            </p>
+            <p>
+                E-posta : <input type="email" name="email" required>
+                <!-- 'email' E-osta almak için kullanılır. -->
+            </p>
+            <p>
+                Beni Hatırla <input type="checkbox" name="benihatirla">
+            </p>
+            <p>
+                Erkek <input type="radio" name="cinsiyet">
+                Kadın <input type="radio" name="cinsiyet">
+                <!-- 'radio' tek seçim yapabilmek için kutucuk yapar. Fakat 'name' değerleri aynı olmalıdır. -->
+            </p>
+            <p>
+                Beni Hatırla <br>
+                Sinema <input type="checkbox" name="hobi"><br>
+                Spor <input type="checkbox" name="hobi"><br>
+                Kitap Okumak <input type="checkbox" name="hobi"><br>
+                <!-- 'checkbox' birden fazla seçim yapabilmek için kutucuk yapar. -->
+            </p>
+            <p>
+                <select name="sehir">         <!-- <select> etiketi çok seçenek olursa kaydırmalı kutu oluşturur. -->
+                    <option>İstanbul</option> <!-- <option> etiketi seçenekleri ekelemek içindir. -->
+                    <option>Kocaeli</option>
+                    <option>Ankara</option>
+                </select>
+            </p>
+            <p>
+                <select multiple name="sehirler"> <!-- 'multiple' özelliği birden çok seçime izin verir.-->
+                    <option>İstanbul</option>
+                    <option>Kocaeli</option>
+                    <option>Ankara</option>
+                </select>
+            </p>
+
+            <input type="submit" value="Kaydet">
+            <input type="reset">
+            <!--
+                *** BUTON OLUŞTURMA ***
+                'submit'  =  Formu göndermek içindir.
+                'reset'   =  Formu sıfırlamak içindir.
+                'value'   =  Butonların üzerinde yazan yazıyı belirler.
+            -->
+
+        </form>
+
+    </body>
+</html>
