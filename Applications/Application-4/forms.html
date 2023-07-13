@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="title" content="Hemen Üye Ol">
+        <meta name="keywords" content="Hemen, üye, ol, giriş sayfası, kaydol, üye ol sayfası, kaydol sayfası, internet, sayfa">
+        <meta name="description" content="Üye olmak için çok doğru adrestesiniz.">
+        <title>Hemen Üye Ol</title>
+    </head>
+    
+    <body>
+
+        <h1>Lütfen Formu Eksiksiz Doldurunuz.</h1>
+        <hr>
+
+        <form>
+            <h4>Hesap Bilgileriniz</h4>
+            <p>
+                Kullanıcı Adı : <input type="text" name="username" placeholder="Kullanıcı adınızı giriniz" required>
+            </p>
+            <p>
+                Eposta : <input type="email" name="email" placeholder="e-posta giriniz" required>
+            </p>
+            <p>
+                Parola : <input type="password" name="password" placeholder="parola giriniz" required>
+            </p>
+
+            <h4>Kişisel Bilgileriniz</h4>
+            <p>
+                Ad : <input type="text" name="ad">
+            </p>
+            <p>
+                Soyad : <input type="text" name="soyad">
+            </p>
+            <p>
+                Şehir : 
+                <select name="sehirler">
+                    <option>Ankara</option>
+                    <option>İstanbul</option>
+                    <option>İzmir</option>
+                    <option>Bursa</option>
+                    <option>Antalya</option>
+                </select>
+            </p>
+            <p>
+                Cinsiyet : 
+                <input type="radio" name="cinsiyet"> Erkek
+                <input type="radio" name="cinsiyet"> Kadın
+            </p><p>
+                Hobileriniz : <br>
+                Sinema<input type="checkbox" name="hobi"><br>
+                Gezmek<input type="checkbox" name="hobi"><br>
+                Spor<input type="checkbox" name="hobi"><br>
+                Kitap<input type="checkbox" name="hobi">
+            </p>
+            <p>
+                <input type="submit" name="kaydet" value="KAYDET">
+            </p>
+        </form>
+        
+    </body>
+</html>
